@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nando's</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 d-none d-lg-block">
+          <img src="logo1.jpeg" alt="Desktop Image" class="img-fluid d-none d-lg-block" width="114" height="38">
+        </div>
+        <div class="col-12 d-lg-none">
+          <img src="logo.jpeg" alt="Mobile Image" class="img-fluid d-lg-none" style="height: 70px;">
+        </div> 
+      </div>
+
+      <div class="d-flex align-items-center d-lg-none flex-nowrap">
+        <!-- <a class="navbar-brand" href="#">
+          <img src="https://www.nandos.co.uk/sites/all/themes/nandos/nandos-2015-styleguide-dist/images/svgs/user-green.svg" alt="User" width="30" height="30">
+        </a> -->
+        <a href="#" class="btn btn-primary">ORDER ONLINE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item ms-2">
+            <a class="nav-link" href="#">MENU</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link" href="#">RESTAURANTS</a>
+          </li>
+          <li class="nav-item dropdown ms-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              NANDO'S REWARDS
+            </a>
+            <ul class="dropdown-menu border-0">
+              <li><a class="dropdown-item fw-bold" href="#">Join now</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">How it works</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Lost Card</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center fw-bold" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle me-2" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                  </svg>
+                  Log In
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ms-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              COOK
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fw-bold" href="#">Products</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Recepies</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link" href="#">SHOP</a>
+          </li>
+          <li class="nav-item dropdown ms-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ABOUT US
+            </a>
+            <ul class="dropdown-menu border-0">
+              <li><a class="dropdown-item" href="#">ABOUT</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Food</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Fighting Malaria</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Being Sustainable</a></li>
+              <li><a class="dropdown-item" href="#">CONNECT</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">The Nando's App</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">News</a></li>
+              <li><a class="dropdown-item" href="#">EXPERIENCE</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">This is PERi-Peri</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Music</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Art</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ms-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              HELP</a>
+            <ul class="dropdown-menu border-0">
+              <li><a class="dropdown-item" href="#">FAQs</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Search FAQs</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">My Account</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Food</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Online Ordering</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Restaurants</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Nando's Card & Discounts</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Fundraising Requests</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Sustainability</a></li>
+              <li><a class="dropdown-item" href="#">CONTACT</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Contact Us</a></li>
+              <li><a class="dropdown-item" href="#">RESOURCES</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Press Gallery</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link" href="#">CAREERS</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link" href="demo.html">DEMO</a>
+          </li
+          
+        </ul>
+      </div>
+      <div class="d-flex align-items-center d-none d-lg-block flex-nowrap">
+        <a class="navbar-brand" href="#">
+          <img src="https://www.nandos.co.uk/sites/all/themes/nandos/nandos-2015-styleguide-dist/images/svgs/user-green.svg" alt="User" width="30" height="30">
+        </a>
+        <a href="#" class="btn btn-primary">ORDER ONLINE</a>
+        <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+     
+      
+    </div>
+  </nav>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="corousel1.jpg" class="image d-block object-fit-cover" alt="...">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+          <img src="line.png" class="line1" alt="">
+          <h2 class="display-3">NandoOoO’s x Fanta</h2>
+          <img src="line.png" class="line2" alt="">
+          <p class="lead">Ready to enter your weird era?</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="corousel2.jpg" class="image d-block " alt="...">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+          <img src="line.png" class="line1" alt="">
+          <h2 class="display-3">Bite me</h2>
+          <img src="line.png" class="line2" alt="">
+          <p class="lead">Our Cheesy Garlic Pitta's oOoOzing with good stuff.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="text-h">
+          <h2 >Order for Collect</h2>
+        </div>
+        <div class="para-h">
+          <p>Plan ahead and get your PERi-PERi to go, from a restaurant near you.</p>
+        </div>
+        <div> <a href="#" class="btn btn-primary">ORDER COLLECT</a></div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="text-h"><h2>Nando's Delivery</h2></div>
+        <div class="para-h"><p>We sometimes change our delivery areas based on demand - check if we're delivering to you.</p></div>
+        <div><a href="#" class="btn btn-primary ">ORDER DELIVERY</a></div>
+        <div>
+          <img src="deliveroo-logo-black.svg" alt="Deliveroo Logo" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="text-h"><h2>Eat-in with us!</h2></div>
+        <div class="para-h"><p>Find your local and grab a seat at the table or booth.</p></div>
+        <div><a href="#" class="btn btn-primary ">FIND RESTAURANT</a></div>
+        <div class="p2"><p>Already in the restaurant? Scan the QR Code on your table using your phone to get started!</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="nandoreward">
+    <div class="reward" style="color:black; text-align: center;">
+        <img src="line-black.png" class="line1">
+        <h3>Nando's Rewards</h3>
+        <img src="line-black.png" class="line2">
+        <h5 class="mt-4">Eat PERi-PERi, earn PERi-PERi!</h5>
+    </div>
+    <div class="rew">
+        <div class="row flex-wrap" style="display: flex; width: 100%; margin: 0; padding: 0; justify-content: center;">
+            <div class="col-12 col-lg-2 px-4 mt-7 text-center">
+                <img src="join.svg" width="120" height="120">
+                <h4>Join</h4>
+                <p>Create an account or log in if you already have one</p>
+            </div>
+            <div class="col-12 col-lg-2 px-4 mt-5 text-center">
+                <img src="wallet.svg" width="120" height="120">
+                <h4>Add to Wallet</h4>
+                <p>Add your Nando's Card to Apple Wallet</p>
+            </div>
+            <div class="col-12 col-lg-2 px-4 mt-3 text-center">
+                <img src="tap.svg" width="120" height="120">
+                <h4>Tap</h4>
+                <p>Tap your phone on the contactless reader</p>
+            </div>
+            <div class="col-12 col-lg-2 px-4 mt-7 text-center">
+                <img src="earn.svg" width="120" height="120">
+                <h4>Earn</h4>
+                <p>Earn a Chilli on every order of £7 or more</p>
+            </div>
+            <div class="col-12 col-lg-2 px-4 mt-7 text-center">
+                <img src="redeem.svg" width="120" height="120">
+                <h4>Redeem</h4>
+                <p>Chillies lead to rewards and rewards mean free PERi-PERi!</p>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <button class="btn mt-4" style="margin-bottom: 40px;">JOIN NOW</button>
+        <button class="btn mt-4" style="margin-left: 10px; margin-bottom: 40px;">LOG IN</button>
+    </div> 
+</div>
+
+  <div class="imgg">
+    <img src="icecream.jpg" alt="Bottomless Soft Swirl" class="img-fluid">
+    <div class="text">
+      <h2>Bottomless Soft Swirl</h2>
+      <p>Cone or tub? Choose your fighter</p>
+      <a href="#" class="btn btn-primary">ORDER NOW</a>
+    </div>
+  </div>
+
+  <div class="container2-flex">
+    <div class="row gx-0">
+      <div class="col-6 ">
+        <div class="image-container">
+          <img src="desktop1.webp" alt="" class="img-fluid">
+          <div class="text">
+            <h1>Know a Nando's Lover</h1>
+            <p>Two words:gift card.</p>
+            <a href="#" class="btn btn-primary">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-6">
+        <div class="image-container">
+          <img src="desktop2.webp" alt="" class="img-fluid">
+          <div class="text">
+            <h1>Cookin' up change</h1>
+            <p>We're changing how we do things bite by bite.</p>
+            <a href="#" class="btn btn-primary">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container">
+      <div class="con2 d-none d-lg-block">
+        <div class="row">
+            <div class="col-md-2">
+                <h5>FOOD</h5>
+                <img src="line.png" alt="" class="line1">
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Menu</a></li>
+                    <li><a href="#" class="text-white">Recipes</a></li>
+                    <li><a href="#" class="text-white">Shop</a></li>
+                    <li><a href="#" class="text-white">Our Food</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>RESTAURANTS</h5>
+                <img src="line.png" alt="" class="line2">
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Find a Nando's</a></li>
+                    <li><a href="#" class="text-white">View All Restaurants</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>NANDO'S CARD</h5>
+                <img src="line.png" alt="" class="line3">
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Join now</a></li>
+                    <li><a href="#" class="text-white">How it works</a></li>
+                    <li><a href="#" class="text-white">Lost Card</a></li>
+                    <li><a href="#" class="text-white">Log In</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>EXPLORE</h5>
+                <img src="line.png" alt="" class="line4">
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Our Blog</a></li>
+                    <li><a href="#" class="text-white">The Nando's App</a></li>
+                    <li><a href="#" class="text-white">Being Sustainable</a></li>
+                    <li><a href="#" class="text-white">Fighting Malaria</a></li>
+                    <li><a href="#" class="text-white">Art</a></li>
+                    <li><a href="#" class="text-white">Music</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2">
+                <h5>HELP</h5>
+                <img src="line.png" alt="" class="line5">
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Search FAQs</a></li>
+                    <li><a href="#" class="text-white">My Account</a></li>
+                    <li><a href="#" class="text-white">Food</a></li>
+                    <li><a href="#" class="text-white">Online Ordering</a></li>
+                    <li><a href="#" class="text-white">Restaurants</a></li>
+                    <li><a href="#" class="text-white">Nando's Cards & Discounts</a></li>
+                    <li><a href="#" class="text-white">Fundraising Requests</a></li>
+                    <li><a href="#" class="text-white">Sustainability</a></li>
+                    <li><a href="#" class="text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2">
+                <h5>LEGAL</h5>
+                <img src="line.png" alt="" class="line6">
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Terms & Conditions</a></li>
+                    <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    <li><a href="#" class="text-white">Cookies Policy</a></li>
+                    <li><a href="#" class="text-white">Slavery Statement</a></li>
+                    <li><a href="#" class="text-white">Gender Pay Gap Report</a></li>
+                    <li><a href="#" class="text-white">Insurance Policy Details</a></li>
+                    <li><a href="#" class="text-white">NGHL Tax Strategy</a></li>
+                    <li><a href="#" class="text-white">Stakeholder Engagement</a></li>
+                </ul>
+            </div> 
+        </div>
+      </div>
+        <div class="accordion d-lg-none" id="footerAccordion">
+          <div class="accordion-item bg-dark text-white border-0">
+            <h5 class="accordion-header" id="foodHeading">
+              <button class="accordion-button bg-dark text-white collapsed border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#foodCollapse" aria-expanded="false" aria-controls="foodCollapse">
+                <div class="d-flex justify-content-between w-100">
+                  <span>FOOD</span>
+                  <span class="sign"></span>
+                </div>
+              </button>
+            </h5>
+            <div id="foodCollapse" class="accordion-collapse collapse" aria-labelledby="foodHeading" data-bs-parent="#footerAccordion">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Menu</a></li>
+                  <li><a href="#" class="text-white">Recipes</a></li>
+                  <li><a href="#" class="text-white">Shop</a></li>
+                  <li><a href="#" class="text-white">Our Food</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-dark text-white border-0">
+            <h5 class="accordion-header" id="restaurantsHeading">
+              <button class="accordion-button bg-dark text-white collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#restaurantsCollapse" aria-expanded="false" aria-controls="restaurantsCollapse">
+                <div class="d-flex justify-content-between w-100">
+                  <span>RESTAURANT</span>
+                  <span class="sign"></span>
+                </div>
+              </button>
+            </h5>
+            <div id="restaurantsCollapse" class="accordion-collapse collapse" aria-labelledby="restaurantsHeading" data-bs-parent="#footerAccordion">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Find a Nando's</a></li>
+                  <li><a href="#" class="text-white">View All Restaurants</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-dark text-white border-0">
+            <h5 class="accordion-header" id="cardHeading">
+              <button class="accordion-button bg-dark text-white collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#cardCollapse" aria-expanded="false" aria-controls="cardCollapse">
+                <div class="d-flex justify-content-between w-100">
+                  <span>NANDO'S CARD</span>
+                  <span class="sign"></span>
+                </div>
+              </button>
+            </h5>
+            <div id="cardCollapse" class="accordion-collapse collapse" aria-labelledby="cardHeading" data-bs-parent="#footerAccordion">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Join now</a></li>
+                  <li><a href="#" class="text-white">How it works</a></li>
+                  <li><a href="#" class="text-white">Lost Card</a></li>
+                  <li><a href="#" class="text-white">Log In</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-dark text-white border-0">
+            <h5 class="accordion-header" id="exploreHeading">
+              <button class="accordion-button bg-dark text-white collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#exploreCollapse" aria-expanded="false" aria-controls="exploreCollapse">
+                <div class="d-flex justify-content-between w-100">
+                  <span>EXPLORE</span>
+                  <span class="sign"></span>
+                </div>
+              </button>
+            </h5>
+            <div id="exploreCollapse" class="accordion-collapse collapse" aria-labelledby="exploreHeading" data-bs-parent="#footerAccordion">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Our Blog</a></li>
+                  <li><a href="#" class="text-white">The Nando's App</a></li>
+                  <li><a href="#" class="text-white">Being Sustainable</a></li>
+                  <li><a href="#" class="text-white">Fighting Malaria</a></li>
+                  <li><a href="#" class="text-white">Art</a></li>
+                  <li><a href="#" class="text-white">Music</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-dark text-white border-0">
+            <h5 class="accordion-header" id="helpHeading">
+              <button class="accordion-button bg-dark text-white collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#helpCollapse" aria-expanded="false" aria-controls="helpCollapse">
+                <div class="d-flex justify-content-between w-100">
+                  <span>HELP</span>
+                  <span class="sign"></span>
+                </div>
+              </button>
+            </h5>
+            <div id="helpCollapse" class="accordion-collapse collapse" aria-labelledby="helpHeading" data-bs-parent="#footerAccordion">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Search FAQs</a></li>
+                  <li><a href="#" class="text-white">My Account</a></li>
+                  <li><a href="#" class="text-white">Food</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-dark text-white border-0">
+            <h5 class="accordion-header" id="legalHeading">
+              <button class="accordion-button bg-dark text-white collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#legalCollapse" aria-expanded="false" aria-controls="legalCollapse">
+                <div class="d-flex justify-content-between w-100">
+                  <span>LEGAL</span>
+                  <span class="sign"></span>
+                </div>
+              </button>
+            </h5>
+            <div id="legalCollapse" class="accordion-collapse collapse" aria-labelledby="legalHeading" data-bs-parent="#footerAccordion">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Terms & Conditions</a></li>
+                  <li><a href="#" class="text-white">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col-lg-6 col-md-12 app-section">
+                <h2>Feed your appetite</h2>
+                <p>Get the Nando's app to order from your table, on-the-go or to your sofa</p>
+                <div class="app-links">
+                    <a href="#">
+                        <img src="app.jpg" alt="Download on the App Store" width="140" height="auto"/>
+                    </a>
+                    <a href="#">
+                        <img src="google.jpg" alt="Get it on Google Play" width="120" height="auto" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 fan-section">
+                <h2>Only (Nando's) fans</h2>
+                <p>Sign up for hot content. Like our emails and other juicy stuff. It's free, too...</p>
+                <div class="d-flex text-md-start">
+                  <input type="email" class="form-control custom-input" placeholder="Pop your email address in here">
+                  <form class="email-signup">
+                    
+                  <button class="btn btn-warning text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                  </svg></button>
+              </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 justify-content-between align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+             <p>&copy; <span class="nandos-year">Nando's 2024</span> | <a href="#" class="text-white privacy-policy">Privacy Policy</a></p>
+            </div>
+            <div class="col-md-6  social-media-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-snapchat" viewBox="0 0 16 16">
+                  <path d="M15.943 11.526c-.111-.303-.323-.465-.564-.599a1 1 0 0 0-.123-.064l-.219-.111c-.752-.399-1.339-.902-1.746-1.498a3.4 3.4 0 0 1-.3-.531c-.034-.1-.032-.156-.008-.207a.3.3 0 0 1 .097-.1c.129-.086.262-.173.352-.231.162-.104.289-.187.371-.245.309-.216.525-.446.66-.702a1.4 1.4 0 0 0 .069-1.16c-.205-.538-.713-.872-1.329-.872a1.8 1.8 0 0 0-.487.065c.006-.368-.002-.757-.035-1.139-.116-1.344-.587-2.048-1.077-2.61a4.3 4.3 0 0 0-1.095-.881C9.764.216 8.92 0 7.999 0s-1.76.216-2.505.641c-.412.232-.782.53-1.097.883-.49.562-.96 1.267-1.077 2.61-.033.382-.04.772-.036 1.138a1.8 1.8 0 0 0-.487-.065c-.615 0-1.124.335-1.328.873a1.4 1.4 0 0 0 .067 1.161c.136.256.352.486.66.701.082.058.21.14.371.246l.339.221a.4.4 0 0 1 .109.11c.026.053.027.11-.012.217a3.4 3.4 0 0 1-.295.52c-.398.583-.968 1.077-1.696 1.472-.385.204-.786.34-.955.8-.128.348-.044.743.28 1.075q.18.189.409.31a4.4 4.4 0 0 0 1 .4.7.7 0 0 1 .202.09c.118.104.102.26.259.488q.12.178.296.3c.33.229.701.243 1.095.258.355.014.758.03 1.217.18.19.064.389.186.618.328.55.338 1.305.802 2.566.802 1.262 0 2.02-.466 2.576-.806.227-.14.424-.26.609-.321.46-.152.863-.168 1.218-.181.393-.015.764-.03 1.095-.258a1.14 1.14 0 0 0 .336-.368c.114-.192.11-.327.217-.42a.6.6 0 0 1 .19-.087 4.5 4.5 0 0 0 1.014-.404c.16-.087.306-.2.429-.336l.004-.005c.304-.325.38-.709.256-1.047m-1.121.602c-.684.378-1.139.337-1.493.565-.3.193-.122.61-.34.76-.269.186-1.061-.012-2.085.326-.845.279-1.384 1.082-2.903 1.082s-2.045-.801-2.904-1.084c-1.022-.338-1.816-.14-2.084-.325-.218-.15-.041-.568-.341-.761-.354-.228-.809-.187-1.492-.563-.436-.24-.189-.39-.044-.46 2.478-1.199 2.873-3.05 2.89-3.188.022-.166.045-.297-.138-.466-.177-.164-.962-.65-1.18-.802-.36-.252-.52-.503-.402-.812.082-.214.281-.295.49-.295a1 1 0 0 1 .197.022c.396.086.78.285 1.002.338q.04.01.082.011c.118 0 .16-.06.152-.195-.026-.433-.087-1.277-.019-2.066.094-1.084.444-1.622.859-2.097.2-.229 1.137-1.22 2.93-1.22 1.792 0 2.732.987 2.931 1.215.416.475.766 1.013.859 2.098.068.788.009 1.632-.019 2.065-.01.142.034.195.152.195a.4.4 0 0 0 .082-.01c.222-.054.607-.253 1.002-.338a1 1 0 0 1 .197-.023c.21 0 .409.082.49.295.117.309-.04.56-.401.812-.218.152-1.003.638-1.18.802-.184.169-.16.3-.139.466.018.14.413 1.991 2.89 3.189.147.073.394.222-.041.464"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
