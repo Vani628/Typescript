@@ -69,7 +69,7 @@ namespace App {
 
         render() {
             this.container.innerHTML = '';
-
+        
             const input = document.createElement('input');
             const addButton = document.createElement('button');
             addButton.textContent = 'Add';
@@ -80,9 +80,9 @@ namespace App {
                 }
             };
 
-            this.container.appendChild(input);
-            this.container.appendChild(addButton);
-
+            this.container.appendChild(input);            
+            this.container.appendChild(addButton); 
+        
             const filterContainer = document.createElement('div');
             ['all', 'completed', 'incomplete'].forEach((status) => {
                 const filterButton = document.createElement('button');
@@ -91,23 +91,32 @@ namespace App {
                 filterContainer.appendChild(filterButton);
             });
             this.container.appendChild(filterContainer);
-
+        
             const ul = document.createElement('ul');
             const filteredTodos = this.todos.filter(todo => {
                 if (this.filter === 'completed') return todo.completed;
                 if (this.filter === 'incomplete') return !todo.completed;
                 return true;
             });
-
+        
             filteredTodos.forEach(todo => {
                 const li = document.createElement('li');
                 li.textContent = todo.task;
                 li.style.textDecoration = todo.completed ? 'line-through' : 'none';
-
-                li.onclick = () => this.toggleComplete(todo.id);
-
+        
+                const completeBtn = document.createElement('button');
+                completeBtn.textContent = todo.completed ? 'Uncomplete' : 'Complete';
+                completeBtn.style.backgroundColor = todo.completed ? '#28a745' : '#ffc107'; 
+                completeBtn.style.color = 'white';
+                completeBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    this.toggleComplete(todo.id);
+                };
+        
                 const editBtn = document.createElement('button');
                 editBtn.textContent = 'Edit';
+                editBtn.style.backgroundColor = '#007bff'; 
+                editBtn.style.color = 'white';
                 editBtn.onclick = (e) => {
                     e.stopPropagation();
                     const newTask = prompt("Edit task:", todo.task);
@@ -115,26 +124,35 @@ namespace App {
                         this.editTodo(todo.id, newTask);
                     }
                 };
-
+        
                 const deleteBtn = document.createElement('button');
                 deleteBtn.textContent = 'Delete';
+                deleteBtn.style.backgroundColor = '#dc3545'; 
+                deleteBtn.style.color = 'white';
                 deleteBtn.onclick = (e) => {
                     e.stopPropagation();
                     this.deleteTodo(todo.id);
                 };
-
-                li.appendChild(editBtn);
-                li.appendChild(deleteBtn);
+        
+                completeBtn.style.marginLeft = '10px';
+                editBtn.style.marginLeft = '10px';
+                deleteBtn.style.marginLeft = '10px';
+        
+                li.appendChild(completeBtn); 
+                li.appendChild(editBtn);    
+                li.appendChild(deleteBtn);   
                 ul.appendChild(li);
             });
-
+        
             this.container.appendChild(ul);
-
+        
             const clearCompletedBtn = document.createElement('button');
             clearCompletedBtn.textContent = 'Clear Completed';
             clearCompletedBtn.onclick = () => this.clearCompleted();
+            clearCompletedBtn.classList.add('clear-completed'); 
             this.container.appendChild(clearCompletedBtn);
         }
+        
     }
 }
 
